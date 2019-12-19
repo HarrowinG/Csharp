@@ -1,11 +1,11 @@
-﻿namespace Csharp.Constructors
+﻿namespace Csharp.Classes
 {
-    public class Constructor
+    public class Deconstructor
     {
         public readonly int Age;
         public readonly int Mass;
 
-        public Constructor(int age, int mass)
+        public Deconstructor(int age, int mass)
         {
             Age = age;
             Mass = mass;
@@ -19,7 +19,7 @@
 
         public static void Run()
         {
-            var obj = new Constructor(24, 65);
+            var obj = new Deconstructor(24, 65);
             //all methods are the same, need to be named Deconstruct to be used as deconstruct assignment operator
             (int age, int mass) = obj;
 
@@ -46,9 +46,9 @@
         }
     }
 
-    public static class ConstructorExtensions
+    public static class DeconstructorExtensions
     {
-        public static void DeconstructExtension(this Constructor obj, out int age, out int mass)
+        public static void DeconstructExtension(this Deconstructor obj, out int age, out int mass)
         {
             age = obj.Age;
             mass = obj.Mass;

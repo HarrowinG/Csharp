@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Csharp.DynamicBinding;
 
 namespace Csharp
 {
@@ -6,7 +6,7 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Dynamic.Run();
         }
     }
 }

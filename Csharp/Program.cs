@@ -1,4 +1,4 @@
-﻿using Csharp.DynamicBinding;
+﻿using Csharp.StringAndTextProcessing;
 
 namespace Csharp
 {
@@ -6,7 +6,7 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            Dynamic.Run();
+            StringCompare.Run();
         }
     }
 }

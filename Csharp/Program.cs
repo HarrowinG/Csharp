@@ -1,4 +1,4 @@
-﻿using Csharp.StringAndTextProcessing;
+﻿using Csharp.Threading;
 
 namespace Csharp
 {
@@ -6,7 +6,7 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            StringCompare.Run();
+            StaticFieldSafe.Run();
         }
     }
 }
